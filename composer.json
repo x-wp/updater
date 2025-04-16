@@ -36,11 +36,7 @@
   "autoload": {
     "psr-4": {
       "Oblak\\WP\\": "src"
-    },
-    "files": [
-      "src/Utils/oblak-wppu-init.php",
-      "src/Utils/oblak-wppu-utils.php"
-    ]
+    }
   },
   "config": {
     "allow-plugins": {
