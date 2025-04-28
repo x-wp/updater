@@ -254,16 +254,16 @@
         },
         {
             "name": "oblak/wordpress-coding-standard",
-            "version": "v1.2.6",
+            "version": "v1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/oblakstudio/wordpress-coding-standards.git",
-                "reference": "5b93e77b6faa931b6eb160d73913a566236de3cb"
+                "reference": "b9c6fd5c58edccc464927c9b9f239b0ee0692daf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/oblakstudio/wordpress-coding-standards/zipball/5b93e77b6faa931b6eb160d73913a566236de3cb",
-                "reference": "5b93e77b6faa931b6eb160d73913a566236de3cb",
+                "url": "https://api.github.com/repos/oblakstudio/wordpress-coding-standards/zipball/b9c6fd5c58edccc464927c9b9f239b0ee0692daf",
+                "reference": "b9c6fd5c58edccc464927c9b9f239b0ee0692daf",
                 "shasum": ""
             },
             "require": {
@@ -302,9 +302,15 @@
             ],
             "support": {
                 "issues": "https://github.com/oblakstudio/wordpress-coding-standards/issues",
-                "source": "https://github.com/oblakstudio/wordpress-coding-standards/tree/v1.2.6"
+                "source": "https://github.com/oblakstudio/wordpress-coding-standards/tree/v1.3.0"
             },
-            "time": "2025-01-23T16:14:04+00:00"
+            "funding": [
+                {
+                    "url": "https://github.com/seebeen",
+                    "type": "github"
+                }
+            ],
+            "time": "2025-04-25T15:40:25+00:00"
         },
         {
             "name": "php-stubs/wordpress-stubs",
@@ -1588,12 +1594,12 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {},
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
         "php": ">=8.0"
     },
-    "platform-dev": [],
+    "platform-dev": {},
     "plugin-api-version": "2.6.0"
 }
