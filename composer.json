@@ -1,5 +1,5 @@
 {
-  "name": "oblak/wp-package-updater",
+  "name": "x-wp/updater",
   "description": "Simplifies the process of updating WordPress packages from custom repositories.",
   "license": "GPL-2.0-only",
   "type": "library",
@@ -24,28 +24,37 @@
     "issues": "https://github.com/oblakstudio/wp-package-updater/issues"
   },
   "require": {
-    "php": ">= 8.0"
+    "php": ">=8.0",
+    "x-wp/helper-functions": "^1.19",
+    "x-wp/helper-classes": "^1.19"
   },
   "require-dev": {
-    "oblak/wordpress-coding-standard": "^1",
-    "ergebnis/composer-normalize": "^2.31"
+    "oblak/wordpress-coding-standard": "^1.1.1",
+    "php-stubs/wordpress-stubs": "^6.5",
+    "phpstan/extension-installer": "^1.3",
+    "phpstan/phpstan": "^1.10",
+    "phpstan/phpstan-deprecation-rules": "^1.1",
+    "swissspidy/phpstan-no-private": "^0.2.0",
+    "symfony/var-dumper": "^5.4",
+    "szepeviktor/phpstan-wordpress": "^1.3"
   },
   "suggest": {
     "automattic/jetpack-autoloader": "Allow for better interoperability with other plugins that use this package."
   },
   "autoload": {
     "psr-4": {
-      "Oblak\\WP\\": "src"
+      "XWP\\Updater\\": "src/"
     },
     "files": [
-      "src/Utils/oblak-wppu-init.php",
-      "src/Utils/oblak-wppu-utils.php"
+      "src/Functions/xwp-updater-bootstrap.php",
+      "src/Functions/xwp-updater-util-fns.php"
     ]
   },
   "config": {
     "allow-plugins": {
       "dealerdirect/phpcodesniffer-composer-installer": true,
-      "ergebnis/composer-normalize": true
+      "ergebnis/composer-normalize": true,
+      "phpstan/extension-installer": true
     }
   }
 }
