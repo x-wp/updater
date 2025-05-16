@@ -181,6 +181,8 @@ class Supervisor {
             return $package_info;
         }
 
-        return (object) $updater->get_update_data( $args->slug, array( $args->locale ?? \get_locale() ) );
+        $result = $updater->get_update_data( $args->slug, array( $args->locale ?? \get_locale() ) );
+
+        return $result ? (object) $result : $package_info;
     }
 }
